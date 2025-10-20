@@ -1,6 +1,6 @@
 // src/app/signin/page.js
 import { Suspense } from 'react'
-import SigninClient from './SigninClient' // Adjust the import based on your actual file name
+import SigninClient from './SignInClient' // Adjust the import based on your actual file name
 
 export default function SigninPage() {
   return (
