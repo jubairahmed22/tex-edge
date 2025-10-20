@@ -1,0 +1,72 @@
+/* Phone (small devices) */
+@media (max-width: 640px) {
+  .hiddenSm {
+    display: none !important;
+  }
+  .sliderImgSize {
+    height: 300px;
+    margin-top: 10px;
+    max-width: 95%;
+    display: block; /* helps with centering */
+    margin: 0 auto; /* centers horizontally */
+    border-radius: 12px; /* rounded-xl equivalent */
+    object-fit: cover; /* ensures good cropping */
+  }
+  .sliderImageRes {
+    object-fit: cover; /* ensures good cropping */
+  }
+  .buttonPopular {
+    font-size: 12px;
+    padding: 4px 10px; /* top/bottom = 2px, left/right = 3px */
+  }
+  .cartButton {
+    font-size: 10px;
+    padding: 8px 2px;
+  }
+  .pageHeightPY {
+    padding: 10px 0px;
+  }
+  .titlePY {
+    padding: 10px 0px;
+  }
+  .pageHeightShopPY {
+    padding: 0px 0px;
+  }
+  .shopTitle {
+    padding-bottom: 30px;
+  }
+  .PriceTextSize {
+    font-size: 8px;
+  }
+  .PriceTextSizeMain {
+    font-size: 12px;
+  }
+}
+
+/* Tablet (medium devices) */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .sliderImgSize {
+    height: 300px;
+  }
+  .titlePY {
+    padding: 16px 0px;
+  }
+}
+@media (min-width: 1040px) and (max-width: 1600px) {
+  .sliderImgSize {
+    height: 400px;
+  }
+  .titlePY {
+    padding: 30px 0px;
+  }
+}
+
+/* Laptop & Higher (large devices) */
+@media (min-width: 1025px) {
+  .sliderImgSize {
+    height: 600px;
+  }
+  .titlePY {
+    padding: 30px 0px;
+  }
+}
