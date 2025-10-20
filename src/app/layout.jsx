@@ -39,14 +39,14 @@ export default function RootLayout({ children }) {
         <link rel="preload" as="image" href="/src/favicon.ico" />
       </head>      </head>
       <body className="bg-black min-h-screen">
-
+        <AuthProvider>
           {/* <Header /> */}
           <NavBottom></NavBottom>
 
           <Navbar></Navbar>
           <main className="w-full">{children}</main>
           <Footer></Footer>
-
+        </AuthProvider>
       </body>
     </html>
   );

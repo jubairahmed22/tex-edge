@@ -46,7 +46,7 @@ export default function ResetPasswordClient() {
     setIsLoading(true);
     try {
       const res = await fetch(
-        `${process.env.NEXT_PUBLIC_API_BASE_URL}/api/verify-reset-code`,
+        `http://localhost:50001/api/verify-reset-code`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -75,7 +75,7 @@ export default function ResetPasswordClient() {
     setIsLoading(true);
     try {
       const res = await fetch(
-        `${process.env.NEXT_PUBLIC_API_BASE_URL}/api/reset-password`,
+        `http://localhost:50001/api/reset-password`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },

@@ -7,7 +7,7 @@ export default function Employee() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/api/employee/dashboard`, {
+    fetch(`http://localhost:50001/api/employee/dashboard`, {
       headers: { Authorization: `Bearer ${Cookies.get('token')}` }
     })
       .then((r) => r.json())

@@ -6,7 +6,7 @@ import Header from "@/components/Header";
 export default function Admin() {
   const [data, setData] = useState([]);
   useEffect(() => {
-    fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/api/admin/dashboard`, {
+    fetch(`http://localhost:50001/api/admin/dashboard`, {
       headers: { Authorization: `Bearer ${Cookies.get("token")}` },
     })
       .then((r) => r.json())

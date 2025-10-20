@@ -50,7 +50,7 @@ export default function VerifyClient() {
     if (code.length !== 6) return alert("Enter the 6-digit code");
 
     const res = await fetch(
-      `${process.env.NEXT_PUBLIC_API_BASE_URL}/api/verify-email-code`,
+      `http://localhost:50001/api/verify-email-code`,
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -69,7 +69,7 @@ export default function VerifyClient() {
   };
 
   const resend = async () => {
-    await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/api/resend-verification`, {
+    await fetch(`http://localhost:50001/api/resend-verification`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ userId }),

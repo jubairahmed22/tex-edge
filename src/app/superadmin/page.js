@@ -7,7 +7,7 @@ export default function SuperAdmin() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/api/superadmin/dashboard`, {
+    fetch(`http://localhost:50001/api/superadmin/dashboard`, {
       headers: { Authorization: `Bearer ${Cookies.get('token')}` }
     })
       .then((r) => r.json())
